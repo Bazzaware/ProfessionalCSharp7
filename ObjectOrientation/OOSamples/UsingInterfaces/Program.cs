@@ -5,9 +5,9 @@ using System;
 
 namespace UsingInterfaces
 {
-    class Program
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
             IBankAccount venusAccount = new SaverAccount();
             IBankAccount jupiterAccount = new GoldAccount();
@@ -20,6 +20,7 @@ namespace UsingInterfaces
             jupiterAccount.Withdraw(600);
             jupiterAccount.Withdraw(100);
             Console.WriteLine(jupiterAccount.ToString());
+            Console.ReadLine();
         }
     }
 }

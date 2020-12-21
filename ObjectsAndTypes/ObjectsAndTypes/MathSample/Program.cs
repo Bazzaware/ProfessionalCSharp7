@@ -2,9 +2,9 @@
 
 namespace MathSample
 {
-    class Program
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
             // Try calling some static functions.
             Console.WriteLine($"Pi is {Math.GetPi()}");
@@ -18,6 +18,8 @@ namespace MathSample
             math.Value = 30;
             Console.WriteLine($"Value field of math variable contains {math.Value}");
             Console.WriteLine($"Square of 30 is {math.GetSquare()}");
+
+            Console.ReadLine();
         }
     }
 }
